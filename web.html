@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1f26, #31354b);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin-top: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 0.5em 1em;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #31354b;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: url('https://source.unsplash.com/1920x1080/?design') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .portfolio {
+            padding: 2em;
+        }
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1em;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        .contact {
+            background: #31354b;
+            color: white;
+            padding: 2em;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-bottom: 1em;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 0.7em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact button {
+            background: #f4f4f9;
+            border: none;
+            padding: 0.7em;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact button:hover {
+            background: white;
+            color: #31354b;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #1e1f26;
+            color: white;
+        }
+		p {color:white;}
+		li {color:white;}
+		h3 { color:white; b }
+		
+		.btn {
+    background-color:white; 
+    color: black;             
+    padding: 10px 70px;       
+    border: none;             
+    border-radius: 5px;       
+    font-size: 1em;           
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color:red;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Designer</h1>
+        <p>Turning ideas into impactful designs</p>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Your Vision, My Design</h2>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://scontent.fsgn23-1.fna.fbcdn.net/v/t39.30808-6/470828624_583193447657359_8570217192540727237_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGANjChiQJb2eX1uADI1s7ZVJmNN1bURjxUmY03VtRGPOucnpxehWDUgCQYgdIvJAbfOGMkoBMChtEzOOKrMxsf&_nc_ohc=tGgaqb0t_a0Q7kNvgFhakb8&_nc_oc=Adg0wmJXSa8gUbnZz5sb6oveeqnrM0xlRkkdWpUhOIYe7JIkodI5isT68Tq4oFvbyr6Np9hFDw2V2UZdpPiRCZcM&_nc_zt=23&_nc_ht=scontent.fsgn23-1.fna&_nc_gid=AVwr8iWgmI4noxq3F9-m41r&oh=00_AYB6AbS5hJPhassiiYb3fgijLOMHZRWN6S9FS6Sr5X0sRg&oe=676B5E03"
+				alt="Project 1">
+                <div class="overlay">
+                    <p>Project 1: </p>
+					<a href="https://www.canva.com/design/DAGTo1H5dzs/UATLjv2yuf91FqBfTOXfZw/view?utm_content=DAGTo1H5dzs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h90dbf61c0b"><b>BOOK</b></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+               <img src="https://scontent.fsgn23-1.fna.fbcdn.net/v/t39.30808-6/471214620_583195084323862_3765210178866559400_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGnXzhCHW_KcbSfk5PWyifB52yn_r3KyQPnbKf-vcrJA_PpQGeKvmSG24Bxg7w5AUceZtrsHyKek6DtskoScS4T&_nc_ohc=AQjFxiTO6KkQ7kNvgEwZoLf&_nc_oc=AdjLaS-C3eho4XtHCnyifrfqnjlTIbnfgwDG8jNAC78OpM5FgpWS-wMDXs1uNNzbTl8bQ9LqfKfLx2wHjaXxO_j2&_nc_zt=23&_nc_ht=scontent.fsgn23-1.fna&_nc_gid=AY5AhAYmlfnlF8zzR1qO_Hq&oh=00_AYDIkz5W4JVcH6O5UxR4snledSXDyLdv9rCam6-vrio6KA&oe=676B67F3"
+				alt="Project 2">
+                <div class="overlay">
+                    <p>Project 2:</p>
+					<a href="https://www.canva.com/design/DAGXvoueb3g/VYU5NF2rDJCh3SNcOLmSBg/view?utm_content=DAGXvoueb3g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb3ffb7ab6d">PPT</a>
+                </div>
+            </div>
+			<div class="portfolio-item">
+                <img src="https://scontent.fsgn23-1.fna.fbcdn.net/v/t39.30808-6/470883755_583196880990349_567345977967789003_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGJV4OR5AwWKwc76k9wNe5l8bPtwrhw79rxs-3CuHDv2vv8_r54pK4I5U9y0GxhhwFoB8_gs96HXdIugIMV3lr3&_nc_ohc=MxD8eGqIT0wQ7kNvgGinK7q&_nc_oc=Adh5U7eR2M_1fhdFuUReIVk3mT_yL01KFqe0IF9uQ6xuAsxlRdskctyFG7ExF9PQYLwB-9saKpcvly6GPxjHo3cs&_nc_zt=23&_nc_ht=scontent.fsgn23-1.fna&_nc_gid=AvyXw1HZ57ZmCUUNvRDoF3E&oh=00_AYA_-DvJ_BEswLKwXZOp5B6QWjD0i2Ny9pzk3EvbdcHJpg&oe=676B5808"
+				alt="Project 1">
+                <div class="overlay">
+                    <p>Project 3: </p>
+					<a href="https://www.canva.com/design/DAGDoADpm7Y/mDZEhKPkQPhBN9U3yelEFw/view?utm_content=DAGDoADpm7Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h58a71791ab">Check</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <table  width="100%" , align="right" border="0">
+<tr>
+<td><img src="https://scontent.fsgn23-1.fna.fbcdn.net/v/t39.30808-6/469268334_571087375534633_6179907387503899124_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFDwQTFXoUoHytofa8ZoELfnXAngIHZJZGdcCeAgdklkW8uN0t2f5n1yOvnOO6m3-BTM33AQoFzHzSa1UBagFL2&_nc_ohc=32PP3k0ORsYQ7kNvgEqAkHq&_nc_oc=Adi-hdPkxZPPvpFUeI-_drJTLJkpmuKdjy9Rgpsfe-VJGV6s_cKhR0UausXAvPcbe-kO134o2uHbldUvzMjFQA3g&_nc_zt=23&_nc_ht=scontent.fsgn23-1.fna&_nc_gid=AMfXXyGU74bomwveRRISe8r&oh=00_AYCzkUEjlYOV0LZaVbf6TKBQPTPkfwOvHYXzjMssFvCdHQ&oe=676B6515" 
+alt="Ảnh cá nhân" style="width: 150px; height: auto;" align="right"></td>
+<td>
+        <p>Chào bạn, tôi là <b><u><i>ZICA</i></u></b>, một designer chuyên nghiệp với niềm đam mê mạnh mẽ dành cho sự sáng tạo và nghệ thuật. Tôi chuyên về thiết kế sách, đồ họa,logo và bài thuyết trình - những lĩnh vực mà tôi tin rằng mỗi chi tiết đều góp phần kể nên một câu chuyện riêng.</p>
+<p>Ngay từ khi bắt đầu hành trình thiết kế, tôi đã luôn bị cuốn hút bởi cách mà một hình ảnh, một màu sắc hay một kiểu chữ có thể thay đổi cách chúng ta cảm nhận thế giới xung quanh. Với tôi, thiết kế không chỉ là làm đẹp mà còn là cách thể hiện ý tưởng, truyền tải thông điệp, và kết nối cảm xúc giữa con người với nhau.</p>
+
+<p>Trong suốt thời gian làm việc, tôi đã có cơ hội hợp tác với nhiều cá nhân và tổ chức trong các dự án khác nhau. Tôi đặc biệt yêu thích việc thiết kế:</p>
+
+<ul align="left">
+<li><b>Sách:</b> Tạo nên những trang sách không chỉ dễ đọc mà còn cuốn hút qua từng bố cục và hình ảnh minh họa.</li>
+<li><b>Đồ họa:</b> Biến ý tưởng thành những sản phẩm sống động, giàu cảm xúc và độc đáo.</li>
+<li><b>Bài thuyết trình:</b> Thiết kế các slide chuyên nghiệp giúp khách hàng kể câu chuyện của họ một cách thuyết phục và ấn tượng.</li>
+
+<p>Điều tôi luôn tự hào là khả năng kết hợp giữa tính thẩm mỹ và sự hiệu quả. Tôi tin rằng một thiết kế tốt không chỉ là đẹp mà còn phải đáp ứng đúng nhu cầu, giải quyết được vấn đề của khách hàng và tạo nên giá trị lâu dài.
+
+<p>Sứ mệnh của tôi không chỉ là hoàn thiện một sản phẩm mà còn là đồng hành cùng khách hàng, lắng nghe, thấu hiểu và mang lại những giải pháp sáng tạo, khác biệt. Nếu bạn đang tìm kiếm một người có thể biến ý tưởng của mình thành hiện thực hoặc chỉ đơn giản là muốn chia sẻ về nghệ thuật và thiết kế, hãy kết nối với tôi. Tôi rất mong được cùng bạn tạo ra những sản phẩm tuyệt vời!</p>
+</td></tr></table>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <section id="contact">
+        <p>Bạn quan tâm đến việc hợp tác hoặc có bất kỳ câu hỏi nào? Đừng ngần ngại liên hệ với tôi. Tôi luôn sẵn sàng để hỗ trợ!</p>
+        <a href="https://www.facebook.com/zicahaysuy" class="btn">Facebook</a>
+		<a href="https://zalo.me/0967195053" class="btn">Zalo</a>
+
+    </section>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Creative Designer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
